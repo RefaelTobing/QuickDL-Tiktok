@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickDL - Save any video online. Fast, clean, watermark-free.</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-bolt"></i> QuickDL
+        </div>
+
+        <div class="nav-links">
+            <a href="#">Cara Pakai</a>
+            <a href="#">FAQ</a>
+            <button id="darkToggle" class="dark-btn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="hero-content">
+
+            <!-- FIX TAG ERROR -->
+            <h1>Save any video online. Fast, clean, watermark-free.</h1>
+
+            <div class="search-box">
+                <input type="text" id="urlInput" placeholder="Tempel tautan video di sini...">
+                <button onclick="downloadVideo()" id="btnAction">
+                    <i class="fa-solid fa-download"></i> Download
+                </button>
+            </div>
+
+            <p id="status" class="status-msg"></p>
+        </div>
+    </header>
+
+    <div id="resultCard" class="result-container hidden">
+        <div class="video-card">
+            <div class="preview-area">
+                <img id="thumb" src="" alt="Thumbnail">
+                <span class="badge" id="platformBadge">
+                    <i class="fa-solid fa-play"></i>
+                </span>
+            </div>
+
+            <div class="meta-data">
+                <h3 id="author">Username</h3>
+                <p id="title">Caption video disini...</p>
+
+                <div class="action-buttons">
+                    <a id="downloadBtn" class="btn-primary" href="#" target="_blank">
+                        Download Video HD
+                    </a>
+                    <a id="downloadAudio" class="btn-primary btn-audio" href="#" target="_blank">
+                        MP3 Audio
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="features">
+        <div class="feature-item">
+            <i class="fa-solid fa-ban"></i>
+            <h3>Tanpa Watermark</h3>
+            <p>Video bersih tanpa logo TikTok yang mengganggu.</p>
+        </div>
+
+        <div class="feature-item">
+            <i class="fa-brands fa-android"></i>
+            <h3>Multi Platform</h3>
+            <p>Bisa di HP, PC, Android, ataupun iPhone.</p>
+        </div>
+
+        <div class="feature-item">
+            <i class="fa-solid fa-bolt"></i>
+            <h3>Super Cepat</h3>
+            <p>Proses download instan tanpa login.</p>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+
+            <div class="footer-section brand-section">
+                <h2><i class="fa-solid fa-bolt"></i> QuickDL</h2>
+                <p>Save any video online. Fast, clean, watermark-free.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="#">Cara Pakai</a></li>
+                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="#">Lapor Bug</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-icons">
+                    <a href="https://github.com/RefaelTobing" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/repael_tobing/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@rafaeltobing7" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 QuickDL Universal. Handcrafted by <strong>@Refael_Tobing</strong>.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
